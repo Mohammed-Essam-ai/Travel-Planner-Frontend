@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body { @apply font-sans text-brand-navy bg-brand-mist antialiased; overflow-x: hidden; }
+.page-bg { background: linear-gradient(180deg, #e6e6f7 0%, #e6e6f7 70%, rgba(79,133,221,0.79) 100%); }
+.btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand-indigo px-5 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-royal active:scale-[.98] disabled:opacity-50 min-h-[44px]; }
+.btn-ghost { @apply inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 min-h-[44px]; }
+.input { @apply w-full rounded-full bg-brand-pale px-5 py-4 text-base text-brand-navy shadow-md outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-brand-blue min-h-[48px]; }
